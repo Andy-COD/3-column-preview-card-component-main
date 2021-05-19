@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+.attribution {
+    color: black;
+}
+.container {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 120px auto;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 12px 0px 0px 12px;
+}
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 12px 12px 0px;
+}
+.logo {
+    margin: 12px 0px 12px 15px;
+}
+.header {
+    margin: 15px 0px 15px 15px;
+}
+.text {
+    width: 80%;
+    margin: 12px 0px 40px 15px;
+}
+.btn {
+    margin: 12px 0px 15px 15px;
+    padding: 8px;
+    border: none;
+    border-radius: 12px 15px;
+    width: 50%;
+}
+@media screen and (max-width: 375px) {
+    .container {
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .sedan {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 12px 12px 0px 0px;
+        width: 80%;
+    }
+    .suv {
+        background-color: hsl(184, 100%, 22%);
+        width: 80%;
+    }
+    .luxury {
+        background-color: hsl(179, 100%, 13%);
+        width: 80%;
+        border-radius: 0px 0px 12px 12px;
+    }
+    .logo {
+        margin: 20px 0px 20px 20px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .header {
+        width: 80%;
+        margin: 5px 0px 20px 20px;
+        font-size: 25px;
+    }
+    .text {
+        width: 80%;
+        margin: 5px 0px 20px 20px;
+    }
+    .sedan button,
+    .luxury button,
+    .suv button {
+        color: hsl(184, 100%, 22%);
+    }
+    .btn {
+        margin: 12px 0px 20px 20px;
+        padding: 8px;
+        border: none;
+        border-radius: 12px;
+    }
+
+}
+
+
